@@ -7,11 +7,9 @@ import androidx.navigation.NavDirections
 object NavigatorImpl {
 
     private var navController: NavController? = null
-    private var fragmentManager: FragmentManager? = null
 
-    fun bind(navController: NavController, fragmentManager: FragmentManager) {
+    fun bind(navController: NavController) {
         this.navController = navController
-        this.fragmentManager = fragmentManager
     }
 
     fun unbind() {
