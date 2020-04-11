@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/pagerFragment">
+
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="ru.taptap.wtfviewpager.PagerFragment"
+        android:label="PagerFragment" >
+        <action
+            android:id="@+id/action_pagerFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="ru.taptap.wtfviewpager.EditFragment"
+        android:label="EditFragment" >
+        <argument
+            android:name="ARG"
+            app:argType="integer" />
+    </fragment>
+</navigation>
